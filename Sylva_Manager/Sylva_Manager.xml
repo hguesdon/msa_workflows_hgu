@@ -1,0 +1,149 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="IP Address" name="params.ip" startIncrement="0" type="IpAddress" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/workflows/Sylva_Manager/Process_VM_Connector">
+    <displayName>VM Connector</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Connect_With_VM.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_VM_Connector/Tasks</processPath>
+      <displayName>Connect With VM</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Sylva_Manager/Process_Install_Hugepage">
+    <displayName>Install Hugepage</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Perform_Hugepage_Configuration.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Hugepage/Tasks</processPath>
+      <displayName>Perform Hugepage Configuration</displayName>
+    </task>
+    <task name="Task_Update_Grub.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Hugepage/Tasks</processPath>
+      <displayName>Update Grub</displayName>
+    </task>
+    <task name="Task_Check_Grub.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Hugepage/Tasks</processPath>
+      <displayName>Check Grub</displayName>
+    </task>
+    <task name="Task_upgrade_grub.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Hugepage/Tasks</processPath>
+      <displayName>upgrade grub</displayName>
+    </task>
+    <task name="Task_Reboot_VM.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Hugepage/Tasks</processPath>
+      <displayName>Reboot VM</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Sylva_Manager/Process_Install_Requirements">
+    <displayName>Install Requirements</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Increase_Filesystem_Watcher_Limit.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Requirements/Tasks</processPath>
+      <displayName>Increase Filesystem Watcher Limit</displayName>
+    </task>
+    <task name="Task_Install_Docker.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Requirements/Tasks</processPath>
+      <displayName>Install Docker</displayName>
+    </task>
+    <task name="Task_Start_Docker.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Requirements/Tasks</processPath>
+      <displayName>Start Docker</displayName>
+    </task>
+    <task name="Task_Add_user_to_docker_group.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Requirements/Tasks</processPath>
+      <displayName>Add user to docker group</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Sylva_Manager/Process_Clone_Sylva-Core">
+    <displayName>Clone Sylva-Core</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Fetch_Sylva_from_GitLab.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Clone_Sylva-Core/Tasks</processPath>
+      <displayName>Fetch Sylva from GitLab</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Sylva_Manager/Process_Install_Sylva">
+    <displayName>Install Sylva</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Check_Connectivity.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Sylva/Tasks</processPath>
+      <displayName>Check Connectivity</displayName>
+    </task>
+    <task name="Task_Clone_Sylva_Core.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Sylva/Tasks</processPath>
+      <displayName>Clone Sylva Core</displayName>
+    </task>
+    <task name="Task_Increase_Filesystem_watcher_limit.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Sylva/Tasks</processPath>
+      <displayName>Increase Filesystem watcher limit</displayName>
+    </task>
+    <task name="Task_Install_Docker.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Sylva/Tasks</processPath>
+      <displayName>Install Docker</displayName>
+    </task>
+    <task name="Task_Start_Docker.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Sylva/Tasks</processPath>
+      <displayName>Start Docker</displayName>
+    </task>
+    <task name="Task_Install_Yamllint.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Sylva/Tasks</processPath>
+      <displayName>Install Yamllint</displayName>
+    </task>
+    <task name="Task_Add_Docker_user_to_docker_group.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Sylva/Tasks</processPath>
+      <displayName>Add Docker user to docker group</displayName>
+    </task>
+    <task name="Task_Install_yq_command.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Sylva/Tasks</processPath>
+      <displayName>Install yq command</displayName>
+    </task>
+    <task name="Task_Create_Kind_Network.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Sylva/Tasks</processPath>
+      <displayName>Create Kind Network</displayName>
+    </task>
+    <task name="Task_Checkout_Util_Script.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Sylva/Tasks</processPath>
+      <displayName>Checkout Util Script</displayName>
+    </task>
+    <task name="Task_Execute_Script.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Install_Sylva/Tasks</processPath>
+      <displayName>Execute Script</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Sylva_Manager/Process_Bootstrap_Management_Cluster">
+    <displayName>Bootstrap Management Cluster</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Bootstrap_Sylva_Management_cluster.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Bootstrap_Management_Cluster/Tasks</processPath>
+      <displayName>Bootstrap Sylva Management cluster</displayName>
+    </task>
+    <task name="Task_Update_Kubeconfig.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Sylva_Manager/Process_Bootstrap_Management_Cluster/Tasks</processPath>
+      <displayName>Update Kubeconfig</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <serviceTaskType>python</serviceTaskType>
+    <processToAssociateToTrashIcon/>
+    <name>Sylva Manager</name>
+    <group>Edge|Sylva</group>
+  </information>
+</ObjectDefinition>

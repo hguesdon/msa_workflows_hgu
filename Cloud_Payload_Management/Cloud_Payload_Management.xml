@@ -1,0 +1,153 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="Payload" name="params.payload_descriptor" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="smart_education_deployment">smart_education_deployment</values>
+        <values displayValue="Smart_Turtle_Bot Deployment">Smart_Turtle_Bot</values>
+      </values>
+    </variable>
+    <variable displayName="k8_device_id" name="params.k8_device_id" startIncrement="0" type="Device" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="new_destination" name="params.new_destination" startIncrement="0" type="Device" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="dc_id" name="params.dc_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="service_order" name="params.service_order" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="e2e_service_order" name="params.e2e_service_order" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="vpn_service" name="params.vpn_service" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Status" name="params.health" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="7" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Escalations" name="params.escalation_sid" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="8" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="dc_tkt_id" name="params.dc_tkt_id" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" displayOrder="9" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="dc_tkt_status" name="params.dc_tkt_status" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="10" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/workflows/Cloud_Payload_Management/Process_Select_Payload">
+    <displayName>Deploy Payload</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Select_Payload.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Select_Payload/Tasks</processPath>
+      <displayName>Select Payload</displayName>
+    </task>
+    <task name="K8_Deployment_CREATE.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Select_Payload/Tasks</processPath>
+      <displayName>Deploy Payload</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Cloud_Payload_Management/Process_Configure_Payload">
+    <displayName>Configure Payload</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Provision_the_payload.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Configure_Payload/Tasks</processPath>
+      <displayName>Provision the payload</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Cloud_Payload_Management/Process_Migrate_Payload">
+    <displayName>Migrate Payload</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Accept_Inputs.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Migrate_Payload/Tasks</processPath>
+      <displayName>Accept Inputs</displayName>
+    </task>
+    <task name="Task_Deploy_on_New_Node.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Migrate_Payload/Tasks</processPath>
+      <displayName>Deploy on New Node</displayName>
+    </task>
+    <task name="Task_Remove_Existing_Deployment.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Migrate_Payload/Tasks</processPath>
+      <displayName>Remove Existing Deployment</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Cloud_Payload_Management/Process_Measure_Payload_Cost">
+    <displayName>Find Optimal Placement</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Probe_Service.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Measure_Payload_Cost/Tasks</processPath>
+      <displayName>Probe Service</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Cloud_Payload_Management/Process_Add_delay">
+    <displayName>Alarm for Delay in Service</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Add_delay.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Add_delay/Tasks</processPath>
+      <displayName>Add delay</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Cloud_Payload_Management/Process_Clear_the_delay">
+    <displayName>Clear the delay</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Reset.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Clear_the_delay/Tasks</processPath>
+      <displayName>Reset</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Cloud_Payload_Management/Process_Cleanup_Deployment">
+    <displayName>Cleanup Deployment</displayName>
+    <type>DELETE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Cleanup.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Cleanup_Deployment/Tasks</processPath>
+      <displayName>Cleanup</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Cloud_Payload_Management/Process_Health_Check">
+    <displayName>Health Check</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Diagnose.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Health_Check/Tasks</processPath>
+      <displayName>Diagnose</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Cloud_Payload_Management/Process_Update_RC">
+    <displayName>Update RC</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Update_escalation.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Update_RC/Tasks</processPath>
+      <displayName>Update escalation</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Cloud_Payload_Management/Process_Update_VPN">
+    <displayName>Update VPN</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Update_VPN_Service.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Update_VPN/Tasks</processPath>
+      <displayName>Update VPN Service</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Cloud_Payload_Management/Process_Simulate_Warning">
+    <displayName>Simulate Warning</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Warn.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Cloud_Payload_Management/Process_Simulate_Warning/Tasks</processPath>
+      <displayName>Warn</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>DC Domain - Cloud Payload Management</name>
+    <group/>
+  </information>
+</ObjectDefinition>

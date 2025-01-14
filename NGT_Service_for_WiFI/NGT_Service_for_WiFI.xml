@@ -1,0 +1,71 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="device_id" name="params.device_id" startIncrement="0" type="Device" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="object_id" name="params.Vlan_Nexus.0.object_id" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="name" name="params.Vlan_Nexus.0.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/workflows/NGT_Service_for_WiFI/Process_Upgrade_Wifi_bandwidth">
+    <displayName>Upgrade Wifi bandwidth</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/NGT_Service_for_WiFI/Process_Provision_new_Wifi_endpoint">
+    <displayName>Provision new Wifi endpoint</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_accept_customer_parameters.py">
+      <processPath>/opt/fmc_repository/Process/workflows/NGT_Service_for_WiFI/Process_Provision_new_Wifi_endpoint/Tasks</processPath>
+      <displayName>accept customer parameters</displayName>
+    </task>
+    <task name="Task_test_if_new_wifi_is_connected.py">
+      <processPath>/opt/fmc_repository/Process/workflows/NGT_Service_for_WiFI/Process_Provision_new_Wifi_endpoint/Tasks</processPath>
+      <displayName>test if new wifi is connected</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/NGT_Service_for_WiFI/Process_Update_WiFi_setting">
+    <displayName>Update WiFi setting</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/NGT_Service_for_WiFI/Process_Decommission">
+    <displayName>Decommission</displayName>
+    <type>DELETE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/NGT_Service_for_WiFI/Process_ANother_create_process">
+    <displayName>ANother create process</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/NGT_Service_for_WiFI/Process_Migrate_to_a_new_device">
+    <displayName>Migrate to a new device</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="vlan_IMPORT.py">
+      <processPath>/opt/fmc_repository/Process/workflows/NGT_Service_for_WiFI/Process_Migrate_to_a_new_device/Tasks</processPath>
+      <displayName>Discover existing vlans in source device</displayName>
+    </task>
+    <task name="Vlan_Nexus_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/NGT_Service_for_WiFI/Process_Migrate_to_a_new_device/Tasks</processPath>
+      <displayName>Creater new VLans on target device</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <serviceTaskType>python</serviceTaskType>
+    <processToAssociateToTrashIcon/>
+    <name>NGT Service for WiFI</name>
+    <group/>
+  </information>
+</ObjectDefinition>

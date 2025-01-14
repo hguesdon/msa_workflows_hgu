@@ -1,0 +1,144 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="API Provider" name="params.apivendor" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Orange">Orange</values>
+        <values displayValue="ATT">ATT</values>
+      </values>
+    </variable>
+    <variable displayName="Auth URL" name="params.authurl" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="8" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="https://api.orange.com/oauth/v3/token">https://api.orange.com/oauth/v3/token</values>
+        <values displayValue="https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token">https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token</values>
+      </values>
+    </variable>
+    <variable displayName="Tenant" name="params.tenantid" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="7" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="e741d71c-c6b6-47b0-803c-0f3b32b07556">e741d71c-c6b6-47b0-803c-0f3b32b07556</values>
+      </values>
+    </variable>
+    <variable displayName="Client ID" name="params.clientid" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="9" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="c2be1b4d-8a4f-4a3b-b9c9-abf56b945a41" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="c2be1b4d-8a4f-4a3b-b9c9-abf56b945a41">c2be1b4d-8a4f-4a3b-b9c9-abf56b945a41</values>
+      </values>
+    </variable>
+    <variable displayName="authheader" name="params.authheader" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Basic VU9BSW92dmd1WEFNS3BPRG91R">Basic VU9BSW92dmd1WEFNS3BPRG91R</values>
+      </values>
+    </variable>
+    <variable displayName="Max Age (hours)" name="params.maxage" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="6" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="240" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Phone Number" name="params.msisdn" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="2" increment="0" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="33699901031">33699901031</values>
+        <values displayValue="33699901032">33699901032</values>
+        <values displayValue="33699901033">33699901033</values>
+        <values displayValue="33699901034">33699901034</values>
+        <values displayValue="33699901035">33699901035</values>
+        <values displayValue="33699901036">33699901036</values>
+        <values displayValue="33699901037">33699901037</values>
+        <values displayValue="33699901038">33699901038</values>
+        <values displayValue="33699901039">33699901039</values>
+        <values displayValue="33699901040">33699901040</values>
+        <values displayValue="346661113334">346661113334</values>
+        <values displayValue="4699258238">4699258238</values>
+      </values>
+    </variable>
+    <variable displayName="Latitude (between -90 and 90)" name="params.lat" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="3" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="48.800176" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Longitude (between -180 and 180)" name="params.lon" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="4" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="2.29" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Accuracy (between 2 and 200 km)" name="params.accuracy" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="5" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="2" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Client Secret" name="params.clientsecret" startIncrement="0" type="Password" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="10" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Provider APP ID" name="params.provider_app_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="11" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Device Location">be4faba8-9931-44f6-88f7-8a1c5da7c46c</values>
+        <values displayValue="Sim Swap">9f92e45d-6b93-481c-8e71-75964f008aa1</values>
+      </values>
+    </variable>
+    <variable displayName="swap" name="params.swap" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="access_token" name="params.access_token" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/workflows/CAMARA_APIs/Process_Select_Vendor">
+    <displayName>Select Vendor</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Get_Access_Token.py">
+      <processPath>/opt/fmc_repository/Process/workflows/CAMARA_APIs/Process_Select_Vendor/Tasks</processPath>
+      <displayName>Get Access Token</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/CAMARA_APIs/Process_Device_Location_Retrieval">
+    <displayName>Device Location Retrieval</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Get_Access_Token.py">
+      <processPath>/opt/fmc_repository/Process/workflows/CAMARA_APIs/Process_Device_Location_Retrieval/Tasks</processPath>
+      <displayName>Get Access Token</displayName>
+    </task>
+    <task name="Task_Device_Location_Retrieval.py">
+      <processPath>/opt/fmc_repository/Process/workflows/CAMARA_APIs/Process_Device_Location_Retrieval/Tasks</processPath>
+      <displayName>Device Location Retrieval</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/CAMARA_APIs/Process_Device_Location_Verification">
+    <displayName>Device Location Verification</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/CAMARA_APIs/Process_Device_Location_Retrieval/Tasks/Task_Get_Access_Token.py">
+      <processPath></processPath>
+      <displayName>Get Access Token</displayName>
+    </task>
+    <task name="Task_Location_Verification.py">
+      <processPath>/opt/fmc_repository/Process/workflows/CAMARA_APIs/Process_Device_Location_Verification/Tasks</processPath>
+      <displayName>Location Verification</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/CAMARA_APIs/Process_Device_Status">
+    <displayName>Device Status</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/CAMARA_APIs/Process_Device_Location_Retrieval/Tasks/Task_Get_Access_Token.py">
+      <processPath></processPath>
+      <displayName>Get Access Token</displayName>
+    </task>
+    <task name="Task_Device_Status.py">
+      <processPath>/opt/fmc_repository/Process/workflows/CAMARA_APIs/Process_Device_Status/Tasks</processPath>
+      <displayName>Device Status</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/CAMARA_APIs/Process_Sim_Swap">
+    <displayName>Sim Swap</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/CAMARA_APIs/Process_Device_Location_Retrieval/Tasks/Task_Get_Access_Token.py">
+      <processPath></processPath>
+      <displayName>Get Access Token</displayName>
+    </task>
+    <task name="Task_Sim_Swap_Check.py">
+      <processPath>/opt/fmc_repository/Process/workflows/CAMARA_APIs/Process_Sim_Swap/Tasks</processPath>
+      <displayName>Sim Swap Check</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/CAMARA_APIs/Process_Delete">
+    <displayName>Delete</displayName>
+    <type>DELETE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <information>
+    <icon/>
+    <description>Workflow to invoke CAMARA APIs</description>
+    <displayField>service_id</displayField>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <serviceTaskType>python</serviceTaskType>
+    <processToAssociateToTrashIcon/>
+    <name>CAMARA APIs</name>
+    <group/>
+  </information>
+</ObjectDefinition>

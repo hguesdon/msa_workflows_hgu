@@ -1,0 +1,25 @@
+<ObjectDefinition>
+  <variables frozen="0"/>
+  <example/>
+  <process name="Process/workflows/Anamoly_Triggers/Process_New_Anamoly">
+    <displayName>New Anomaly</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Trigger_IPOP_Anamoly_Handling.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Anamoly_Triggers/Process_New_Anamoly/Tasks</processPath>
+      <displayName>Trigger IPOP Anamoly Handling</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <processToAssiocateToTrashIcon/>
+    <name>Anomaly Triggers</name>
+    <group/>
+  </information>
+</ObjectDefinition>

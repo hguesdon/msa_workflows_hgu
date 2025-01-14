@@ -1,0 +1,63 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="Devices" name="params.devices" startIncrement="0" type="Device" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/workflows/VPN_Service/Process_Select_Devices">
+    <displayName>Select Devices</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Select_Devices_for_VPN_configuration.py">
+      <processPath>/opt/fmc_repository/Process/workflows/VPN_Service/Process_Select_Devices/Tasks</processPath>
+      <displayName>Select Devices for VPN configuration</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/VPN_Service/Process_Configure_Site-A">
+    <displayName>Configure Site-A</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Route.py">
+      <processPath>/opt/fmc_repository/Process/workflows/VPN_Service/Process_Configure_Site-A/Tasks</processPath>
+      <displayName>Route</displayName>
+    </task>
+    <task name="Task_Configure_BGP.py">
+      <processPath>/opt/fmc_repository/Process/workflows/VPN_Service/Process_Configure_Site-A/Tasks</processPath>
+      <displayName>Configure BGP</displayName>
+    </task>
+    <task name="Task_COnfigure_Tunnel_Interfaces.py">
+      <processPath>/opt/fmc_repository/Process/workflows/VPN_Service/Process_Configure_Site-A/Tasks</processPath>
+      <displayName>COnfigure Tunnel Interfaces</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/VPN_Service/Process_Configure_Site-B">
+    <displayName>Configure Site-B</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/VPN_Service/Process_Check_Connectivity">
+    <displayName>Check Connectivity</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/VPN_Service/Process_Generate_Traffic">
+    <displayName>Generate Traffic</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <information>
+    <icon/>
+    <description>Creates VPN Between Sites and Multiple Vendors</description>
+    <displayField>service_id</displayField>
+    <serviceTaskType>python</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <processToAssiocateToTrashIcon/>
+    <name>VPN Service</name>
+    <group/>
+  </information>
+</ObjectDefinition>

@@ -1,0 +1,81 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="source_id" name="params.source_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Escalating Domain" name="params.source_type" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="alarm_details" name="params.alarm_details" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="E2E Service ID" name="params.e2e_service_order" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Trouble TIcket ID" name="params.tkt_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="4" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="resolution" name="params.resolution" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example/>
+  <process name="Process/workflows/E2E_-_Escalation_Management/Process_New_Escalation">
+    <displayName>New Escalation</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Process_Inputs.php">
+      <processPath>/opt/fmc_repository/Process/workflows/E2E_-_Escalation_Management/Process_New_Escalation/Tasks</processPath>
+      <displayName>Process Inputs</displayName>
+    </task>
+    <task name="Task_Update_E2E_Service.php">
+      <processPath>/opt/fmc_repository/Process/workflows/E2E_-_Escalation_Management/Process_New_Escalation/Tasks</processPath>
+      <displayName>Update E2E Service</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/E2E_-_Escalation_Management/Process_Process_Escalation">
+    <displayName>Process Escalation</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Identify_E2E_Service.php">
+      <processPath>/opt/fmc_repository/Process/workflows/E2E_-_Escalation_Management/Process_Process_Escalation/Tasks</processPath>
+      <displayName>Identify E2E Service</displayName>
+    </task>
+    <task name="Task_Analyse_Impact.php">
+      <processPath>/opt/fmc_repository/Process/workflows/E2E_-_Escalation_Management/Process_Process_Escalation/Tasks</processPath>
+      <displayName>Analyse Impact</displayName>
+    </task>
+    <task name="Task_Find_Root_Cause.php">
+      <processPath>/opt/fmc_repository/Process/workflows/E2E_-_Escalation_Management/Process_Process_Escalation/Tasks</processPath>
+      <displayName>Find Root Cause</displayName>
+    </task>
+    <task name="Task_Notify_Source.php">
+      <processPath>/opt/fmc_repository/Process/workflows/E2E_-_Escalation_Management/Process_Process_Escalation/Tasks</processPath>
+      <displayName>Notify Source</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/E2E_-_Escalation_Management/Process_Notify_Reporter">
+    <displayName>Close Escalation</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Notify.php">
+      <processPath>/opt/fmc_repository/Process/workflows/E2E_-_Escalation_Management/Process_Notify_Reporter/Tasks</processPath>
+      <displayName>Notify</displayName>
+    </task>
+    <task name="Task_Update_E2E_Service.php">
+      <processPath>/opt/fmc_repository/Process/workflows/E2E_-_Escalation_Management/Process_Notify_Reporter/Tasks</processPath>
+      <displayName>Update E2E Service</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/E2E_-_Escalation_Management/Process_Update_Tkt_Test">
+    <displayName>Update Tkt Test</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Update_Tkt.php">
+      <processPath>/opt/fmc_repository/Process/workflows/E2E_-_Escalation_Management/Process_Update_Tkt_Test/Tasks</processPath>
+      <displayName>Update Tkt</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>E2E - Escalation Management</name>
+    <group/>
+  </information>
+</ObjectDefinition>

@@ -1,0 +1,178 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="MEC_node" name="params.MEC_node" startIncrement="0" type="Device" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Cluster Name" name="params.compose_pj_name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="Deeptector" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="cluster1" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="true" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Admin Email" name="params.admin_email" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="Deeptector" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="admin@ubiqube.com" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="true" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Admin Password" name="params.admin_password" startIncrement="0" type="Password" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="Deeptector" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="true" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="ME_name" name="params.ME_name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="Managed Entity" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="true" isGrouped="true" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="ME_address" name="params.ME_address" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="Managed Entity" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="true" isGrouped="true" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="ME_login" name="params.ME_login" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="Managed Entity" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="true" isGrouped="true" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="ME_password" name="params.ME_password" startIncrement="0" type="Password" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="Managed Entity" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="true" isGrouped="true" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="External ID" name="params.externalId" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="relatedParties" maxLength="100" displayOrder="1" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="EXTOO1" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="true" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Role" name="params.relatedParties.0.role" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="relatedParties" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="SERVICE_PROVIDER" isMandatory="false" isUserLocked="false" isEditLocked="true" isGrouped="true" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Id" name="params.relatedParties.0.id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="relatedParties" maxLength="300" displayOrder="7" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="SB_CATALYST_HW_PROVIDER" isMandatory="false" isUserLocked="false" isEditLocked="true" isGrouped="true" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Name" name="params.relatedParties.0.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="relatedParties" maxLength="300" displayOrder="8" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="SB_CATALYST_HW_PROVIDER" isMandatory="false" isUserLocked="false" isEditLocked="true" isGrouped="true" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Deeptector_license" name="params.Deeptector_license" startIncrement="0" type="File" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <repositories>
+        <repositories>Datafiles</repositories>
+      </repositories>
+    </variable>
+    <variable displayName="Deeptector Code" name="params.Deeptector_code" startIncrement="0" type="File" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="13" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <repositories>
+        <repositories>Datafiles</repositories>
+      </repositories>
+    </variable>
+  </variables>
+  <example/>
+  <process name="Process/workflows/Send_expect/Process_Device_Onboarding">
+    <displayName>Device Onboarding</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Create_Managed_Entity.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Device_Onboarding/Tasks</processPath>
+      <displayName>Create Managed Entity</displayName>
+    </task>
+    <task name="Task_Order_Change_Notification.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Device_Onboarding/Tasks</processPath>
+      <displayName>Order Change Notification</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Send_expect/Process_Create_New_Instance">
+    <displayName>Create New Instance</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Init.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Create_New_Instance/Tasks</processPath>
+      <displayName>Init</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Send_expect/Process_Deeptector_Installation">
+    <displayName>Deeptector Installation</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_OS_Check.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Deeptector_Installation/Tasks</processPath>
+      <displayName>OS Check</displayName>
+    </task>
+    <task name="Task_Docker_Installation.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Deeptector_Installation/Tasks</processPath>
+      <displayName>Docker Installation</displayName>
+    </task>
+    <task name="Task_Nvidia_Docker_Installation.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Deeptector_Installation/Tasks</processPath>
+      <displayName>Nvidia Docker Installation</displayName>
+    </task>
+    <task name="Task_Docker_Compose_Installation.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Deeptector_Installation/Tasks</processPath>
+      <displayName>Docker Compose Installation</displayName>
+    </task>
+    <task name="Task_Configure_Docker_Daemon.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Deeptector_Installation/Tasks</processPath>
+      <displayName>Configure Docker Daemon</displayName>
+    </task>
+    <task name="Task_Pre_Installer.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Deeptector_Installation/Tasks</processPath>
+      <displayName>Pre Installer</displayName>
+    </task>
+    <task name="Task_Installer.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Deeptector_Installation/Tasks</processPath>
+      <displayName>Installer</displayName>
+    </task>
+    <task name="Task_Order_Change_Notification.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Deeptector_Installation/Tasks</processPath>
+      <displayName>Order Change Notification</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Send_expect/Process_Deeptector_License_Install">
+    <displayName>Deeptector License Install</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_License_Installation.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Deeptector_License_Install/Tasks</processPath>
+      <displayName>License Installation</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Send_expect/Process_Deeptector_Image_Upload">
+    <displayName>Deeptector Code Upload</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/Send_expect/Process_Deeptector_Image_Upload/Tasks/Task_File_Upload.py">
+      <processPath></processPath>
+      <displayName>File Upload</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Send_expect/Process_Deeptector_Image_Analysis">
+    <displayName>Deeptector Image Analysis</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule>true</allowSchedule>
+    <task name="Task_Start_Analysis.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Deeptector_Image_Analysis/Tasks</processPath>
+      <displayName>Start Analysis</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Send_expect/Process_Tear_Down_Deeptector">
+    <displayName>Tear Down Deeptector</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Tear_Down.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Tear_Down_Deeptector/Tasks</processPath>
+      <displayName>Tear Down</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Send_expect/Process_Anylog_Installation">
+    <displayName>Anylog Installation</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Git_Clone.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Anylog_Installation/Tasks</processPath>
+      <displayName>Git Clone</displayName>
+    </task>
+    <task name="Task_Docker_Installation.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Anylog_Installation/Tasks</processPath>
+      <displayName>Docker Installation</displayName>
+    </task>
+    <task name="Task_Start_Containers.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Anylog_Installation/Tasks</processPath>
+      <displayName>Start Containers</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Send_expect/Process_Tear_Down_Anylog">
+    <displayName>Tear Down Anylog</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Stop_Containers.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Tear_Down_Anylog/Tasks</processPath>
+      <displayName>Stop Containers</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Send_expect/Process_Delete">
+    <displayName>Delete</displayName>
+    <type>DELETE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Delete_Instance.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Send_expect/Process_Delete/Tasks</processPath>
+      <displayName>Delete Instance</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <serviceTaskType>python</serviceTaskType>
+    <processToAssociateToTrashIcon/>
+    <name>Edge Computing</name>
+    <group/>
+  </information>
+</ObjectDefinition>

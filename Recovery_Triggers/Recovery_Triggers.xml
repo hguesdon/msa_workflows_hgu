@@ -1,0 +1,25 @@
+<ObjectDefinition>
+  <variables frozen="0"/>
+  <example/>
+  <process name="Process/workflows/Recovery_Triggers/Process_New_Recovery">
+    <displayName>New Recovery</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Trigger_IPOP_Reset_ONU.php">
+      <processPath>/opt/fmc_repository/Process/workflows/Recovery_Triggers/Process_New_Recovery/Tasks</processPath>
+      <displayName>Trigger IPOP Reset ONU</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <processToAssiocateToTrashIcon/>
+    <name>Recovery Triggers</name>
+    <group/>
+  </information>
+</ObjectDefinition>

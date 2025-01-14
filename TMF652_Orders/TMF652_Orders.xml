@@ -1,0 +1,54 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="action" name="params.orderItem.0.action" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Resource Sensor" name="params.orderItem.0.resources.0.sensor" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="2" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Resources</sections>
+      </sections>
+    </variable>
+    <variable displayName="Resource Name" name="params.orderItem.0.resources.0.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="1" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Resources</sections>
+      </sections>
+    </variable>
+    <variable displayName="Resource Monitor" name="params.orderItem.0.resources.0.monitor" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="3" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Resources</sections>
+      </sections>
+    </variable>
+    <variable displayName="Resource Farmer" name="params.orderItem.0.resources.0.farmer" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" displayOrder="4" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" localVarNameMatch="" remoteVarNameMatch="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isMandatory="false" isUserLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Resources</sections>
+      </sections>
+    </variable>
+  </variables>
+  <example/>
+  <process name="Process/workflows/TMF652_Orders/Process_New_Order">
+    <displayName>New Order</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_New_Order.php">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF652_Orders/Process_New_Order/Tasks</processPath>
+      <displayName>New Order</displayName>
+    </task>
+    <task name="Task_Check_Budget_Cap.php">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF652_Orders/Process_New_Order/Tasks</processPath>
+      <displayName>Check Budget Cap</displayName>
+    </task>
+    <task name="Task_Process_Order.php">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF652_Orders/Process_New_Order/Tasks</processPath>
+      <displayName>Process Order</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>php</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <name>TMF652 Orders</name>
+    <group/>
+  </information>
+</ObjectDefinition>

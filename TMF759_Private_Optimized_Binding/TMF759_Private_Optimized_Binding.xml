@@ -1,0 +1,418 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="oauth2 token url" name="params.oauth2_token_url" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="https://login.microsoftonline.com/e741d71c-c6b6-47b0-803c-0f3b32b07556/oauth2/v2.0/token" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="client id" name="params.client_id" startIncrement="0" type="Password" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="client secret" name="params.client_secret" startIncrement="0" type="Password" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="tmf759 url" name="params.tmf759_url" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="https://tmf759-catalyst-dev.nprd-gw.cloud.att.com/pob/v1/" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="liveness url path" name="params.liveness_url_path" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="healthz" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="ue url path" name="params.get_ue_url_path" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="userEquipment" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="ca url path" name="params.get_ca_url_path" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="cloudApplication" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="User Equipment Id" name="params.ue_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Cloud Application Id" name="params.ca_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="id" name="params.ca.0.id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="name" name="params.ca.0.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="href" name="params.ca.0.href" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="operationalState" name="params.ca.0.operationalState" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="note" name="params.ca.0.note" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="type" name="params.ca.0.type" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="schemaLocation" name="params.ca.0.schemaLocation" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="baseType" name="params.ca.0.baseType" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="cloudProvider" name="params.ca.0.cloudProvider" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="cloudRegion" name="params.ca.0.cloudRegion" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="cloudReference" name="params.ca.0.cloudReference" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="ipv4Address" name="params.ca.0.ipv4Address" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Cloud Application</sections>
+      </sections>
+    </variable>
+    <variable displayName="id" name="params.ue.0.id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="name" name="params.ue.0.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="href" name="params.ue.0.href" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="description" name="params.ue.0.description" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="operationalState" name="params.ue.0.operationalState" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="note" name="params.ue.0.note" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="type" name="params.ue.0.type" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="schemaLocation" name="params.ue.0.schemaLocation" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="baseType" name="params.ue.0.baseType" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="locality" name="params.ue.0.locality" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="streetNrLast" name="params.ue.0.streetNrLast" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="streetSuffix" name="params.ue.0.streetSuffix" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="msisdn" name="params.ue.0.msisdn" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="imsi" name="params.ue.0.imsi" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="ipv4Address" name="params.ue.0.ipv4Address" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="Camera" name="params.camera" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="imsi, msisdn &amp; IpAddress will be updated automatically" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+      <values>
+        <values displayValue="Camera 1">camera1</values>
+        <values displayValue="Camera 2">camera2</values>
+      </values>
+    </variable>
+    <variable displayName="IMSI" name="params.ue_imsi" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="true" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="ipv4Address" name="params.ue_ipv4Address" startIncrement="0" type="IpAddress" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="130" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+    <variable displayName="ue_msisdn" name="params.ue_msisdn" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>User Equipment</sections>
+      </sections>
+    </variable>
+  </variables>
+  <example/>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Register_Client_Secret_Authentication">
+    <displayName>Register Client Secret Authentication</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Accept_Parameters.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_Register_Client_Secret_Authentication/Tasks</processPath>
+      <displayName>Accept Parameters</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Create_Face_Recognition_Application">
+    <displayName>Create Face Recognition Application</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+    <task name="Task_Create_Face_Recognition_Application.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_Create_Face_Recognition_Application/Tasks</processPath>
+      <displayName>Create Face Recognition Application</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Create_Video_Feed_North_Camera">
+    <displayName>Create Video Feed North Camera</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Create_Video_Feed_North_Camera/Tasks/Task_Create_Video_Feed_North_Camera.py">
+      <processPath></processPath>
+      <displayName>Create Video Feed North Camera</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Activate_Private_Optimized_Binding">
+    <displayName>Activate Private Optimized Binding</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+    <task name="Task_Activate_Private_Optimized_Binding.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_Activate_Private_Optimized_Binding/Tasks</processPath>
+      <displayName>Activate Private Optimized Binding</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Deactivate_Private_Optimized_Binding">
+    <displayName>Deactivate Private Optimized Binding</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+    <task name="Task_Deactivate_Private_Optimized_Binding.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_Deactivate_Private_Optimized_Binding/Tasks</processPath>
+      <displayName>Deactivate Private Optimized Binding</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Delete_Face_Recognition_Application">
+    <displayName>Delete Face Recognition Application</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+    <task name="Task_Delete_Face_Recognition_Application.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_Delete_Face_Recognition_Application/Tasks</processPath>
+      <displayName>Delete Face Recognition Application</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Delete_Video_Feed_North_Camera_Device">
+    <displayName>Delete Video Feed North Camera Device</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+    <task name="Task_Delete_Video_Feed_North_Camera_Device.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_Delete_Video_Feed_North_Camera_Device/Tasks</processPath>
+      <displayName>Delete Video Feed North Camera Device</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_TMF759_Private_Optimized_Binding_-_Activation__e2e_">
+    <displayName>Private Optimized Binding - Creation &amp; Activation (e2e)</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Create_Face_Recognition_Application/Tasks/Task_Create_Face_Recognition_Application.py">
+      <processPath></processPath>
+      <displayName>Create Face Recognition Application</displayName>
+    </task>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Create_Video_Feed_North_Camera/Tasks/Task_Create_Video_Feed_North_Camera.py">
+      <processPath></processPath>
+      <displayName>Create Video Feed North Camera</displayName>
+    </task>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Activate_Private_Optimized_Binding/Tasks/Task_Activate_Private_Optimized_Binding.py">
+      <processPath></processPath>
+      <displayName>Activate Private Optimized Binding</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_TMF759_Private_Optimized_Binding_-_Deactivation__e2e_">
+    <displayName>Private Optimized Binding - Deactivation/Deletion (e2e)</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Deactivate_Private_Optimized_Binding/Tasks/Task_Deactivate_Private_Optimized_Binding.py">
+      <processPath></processPath>
+      <displayName>Deactivate Private Optimized Binding</displayName>
+    </task>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Delete_Face_Recognition_Application/Tasks/Task_Delete_Face_Recognition_Application.py">
+      <processPath></processPath>
+      <displayName>Delete Face Recognition Application</displayName>
+    </task>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Delete_Video_Feed_North_Camera_Device/Tasks/Task_Delete_Video_Feed_North_Camera_Device.py">
+      <processPath></processPath>
+      <displayName>Delete Video Feed North Camera</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Check_TMF759_Liveness">
+    <displayName>Check TMF759 Liveness</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+    <task name="Task_Check_Liveness.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_Check_TMF759_Liveness/Tasks</processPath>
+      <displayName>Check Liveness</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects">
+    <displayName>Get All User Equipment</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule>true</allowSchedule>
+    <task name="Task_Get_0auth_Token.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks</processPath>
+      <displayName>Get 0auth Token</displayName>
+    </task>
+    <task name="Task_Retrieve_UserEquipment_objects.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks</processPath>
+      <displayName>Retrieve UserEquipment objects</displayName>
+    </task>
+    <task name="Task_Retrieve_Data.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks</processPath>
+      <displayName>Retrieve Data</displayName>
+    </task>
+    <task name="Task_Store_Data.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks</processPath>
+      <displayName>Store Data</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_CloudApplication_objects">
+    <displayName>Get All Cloud Application</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule>true</allowSchedule>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get 0Auth Token</displayName>
+    </task>
+    <task name="Task_Retrieve_CloudApplication_objects.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_CloudApplication_objects/Tasks</processPath>
+      <displayName>Retrieve CloudApplication objects</displayName>
+    </task>
+    <task name="Task_Retrieve_Data.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_CloudApplication_objects/Tasks</processPath>
+      <displayName>Retrieve Data</displayName>
+    </task>
+    <task name="Task_Store_Data.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_CloudApplication_objects/Tasks</processPath>
+      <displayName>Store Data</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Retrieve_Video_Feed_North_Camera">
+    <displayName>Retrieve Video Feed North Camera</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+    <task name="Task_Retrieve_Video_Feed_North_Camera.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_Retrieve_Video_Feed_North_Camera/Tasks</processPath>
+      <displayName>Retrieve Video Feed North Camera</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Retrieve_Face_Recognition_Application">
+    <displayName>Retrieve Face Recognition Application</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+    <task name="Task_Retrieve_Face_Recognition_Application.py">
+      <processPath>/opt/fmc_repository/Process/workflows/TMF759_Private_Optimized_Binding/Process_Retrieve_Face_Recognition_Application/Tasks</processPath>
+      <displayName>Retrieve Face Recognition Application</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/TMF759_Private_Optimized_Binding/Process_Get_Token_Test">
+    <displayName>Get Token Test</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Process/workflows/TMF759_Private_Optimized_Binding/Process_List_or_find_UserEquipment_objects/Tasks/Task_Get_0auth_Token.py">
+      <processPath></processPath>
+      <displayName>Get Token</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>python</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <processToAssiocateToTrashIcon/>
+    <name>TMF759 Private Optimized Binding</name>
+    <group/>
+  </information>
+</ObjectDefinition>

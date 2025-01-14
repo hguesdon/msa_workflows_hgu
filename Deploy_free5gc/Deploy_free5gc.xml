@@ -1,0 +1,47 @@
+<ObjectDefinition>
+  <variables frozen="0">
+    <variable displayName="Edge IP" name="params.edge_ip" startIncrement="0" type="IpAddress" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="130" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Cluster" name="params.cluster" startIncrement="0" type="Device" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="1" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="CNF" name="params.cnf" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="2" increment="0" refServiceURI="" keepOnImport="false" editable="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Free 5G Core">free5gc</values>
+      </values>
+    </variable>
+  </variables>
+  <example/>
+  <process name="Process/workflows/Deploy_free5gc/Process_Connect_Edge_">
+    <displayName>Connect Edge </displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Check_Edge_is_accessible.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Deploy_free5gc/Process_Connect_Edge_/Tasks</processPath>
+      <displayName>Check Edge is accessible</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/Deploy_free5gc/Process_Deploy_Free_5G_core">
+    <displayName>Deploy CNF</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Task_Create_Namespace.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Deploy_free5gc/Process_Deploy_Free_5G_core/Tasks</processPath>
+      <displayName>Create Namespace</displayName>
+    </task>
+    <task name="Task_Deploy_5G_Core.py">
+      <processPath>/opt/fmc_repository/Process/workflows/Deploy_free5gc/Process_Deploy_Free_5G_core/Tasks</processPath>
+      <displayName>Deploy 5G Core</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description>A workflow to deploy free5gc on Sylva installation</description>
+    <displayField>service_id</displayField>
+    <serviceTaskType>python</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <processToAssiocateToTrashIcon/>
+    <name>Deploy CNF</name>
+    <group/>
+  </information>
+</ObjectDefinition>

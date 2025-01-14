@@ -1,0 +1,125 @@
+<ObjectDefinition>
+  <variables frozen="0"/>
+  <example/>
+  <process name="Process/workflows/IPOP_2023/Process_New_Srrvice">
+    <displayName>New Service</displayName>
+    <type>CREATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+  </process>
+  <process name="Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs">
+    <displayName>Provision 10G for ONUs</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Path_FXCl_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Create Path for 10G</displayName>
+    </task>
+    <task name="SDNC_IPOP_DELETE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Clear up 10G on SDNC</displayName>
+    </task>
+    <task name="SDNC_IPOP_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Provision 10G on SDNC</displayName>
+    </task>
+    <task name="ONOS_IPOP_DELETE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Remove 8209 ONU</displayName>
+    </task>
+    <task name="Task_Remove_8225_ONU.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Remove 8225 ONU</displayName>
+    </task>
+    <task name="ONOS_IPOP_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Add 8209 ONU</displayName>
+    </task>
+    <task name="Task_Add_8225_ONU.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Add 8225 ONU</displayName>
+    </task>
+    <task name="1finity_IPOP_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Bring UP Ports</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/IPOP_2023/Process_Switch_to_1G_for_8209">
+    <displayName>Switch to 1G for 8209</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Path_FXCl_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Switch_to_1G_for_8209/Tasks</processPath>
+      <displayName>Switch the Path</displayName>
+    </task>
+    <task name="SDNC_IPOP_DELETE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Switch_to_1G_for_8209/Tasks</processPath>
+      <displayName>Clear up SDNC</displayName>
+    </task>
+    <task name="SDNC_IPOP_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Switch_to_1G_for_8209/Tasks</processPath>
+      <displayName>Provision 1G</displayName>
+    </task>
+    <task name="ONOS_IPOP_DELETE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Switch_to_1G_for_8209/Tasks</processPath>
+      <displayName>Remove Subscriber for 8209</displayName>
+    </task>
+    <task name="ONOS_IPOP_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Switch_to_1G_for_8209/Tasks</processPath>
+      <displayName>Add Subscriber for 8209</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/IPOP_2023/Process_Reset_ONU_8209_to_10G">
+    <displayName>Reset ONU 8209 to 10G</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Path_FXCl_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Create Path for 10G</displayName>
+    </task>
+    <task name="SDNC_IPOP_DELETE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Clear up 10G on SDNC</displayName>
+    </task>
+    <task name="SDNC_IPOP_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Provision 10G on SDNC</displayName>
+    </task>
+    <task name="ONOS_IPOP_DELETE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Remove 8209 ONU</displayName>
+    </task>
+    <task name="ONOS_IPOP_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Provision_10G_for_ONUs/Tasks</processPath>
+      <displayName>Add 8209 ONU</displayName>
+    </task>
+  </process>
+  <process name="Process/workflows/IPOP_2023/Process_Reset_the_Setup">
+    <displayName>Reset the Setup</displayName>
+    <type>UPDATE</type>
+    <visibility>5</visibility>
+    <allowSchedule/>
+    <task name="Clear_Path_FXC_CREATE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Reset_the_Setup/Tasks</processPath>
+      <displayName>Clear the Path</displayName>
+    </task>
+    <task name="1finity_IPOP_DELETE.py">
+      <processPath>/opt/fmc_repository/Process/workflows/IPOP_2023/Process_Reset_the_Setup/Tasks</processPath>
+      <displayName>Bring down the Ports</displayName>
+    </task>
+  </process>
+  <information>
+    <icon/>
+    <description/>
+    <displayField>service_id</displayField>
+    <serviceTaskType>python</serviceTaskType>
+    <order>10000</order>
+    <visibility>5</visibility>
+    <processToAssiocateToTrashIcon/>
+    <name>IPOP 2023</name>
+    <group/>
+  </information>
+</ObjectDefinition>
