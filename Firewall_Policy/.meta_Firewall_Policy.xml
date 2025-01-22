@@ -2,8 +2,8 @@
 <metadata>
     <map>
         <entry>
-            <key>DISPLAYNAME</key>
-            <value>Firewall_Policy.xml</value>
+            <key>TYPE</key>
+            <value>FILE</value>
         </entry>
         <entry>
             <key>REPOSITORY</key>
@@ -14,22 +14,16 @@
             <value>0</value>
         </entry>
         <entry>
-            <key>TAG</key>
+            <key>MANUFACTURER</key>
+            <value>0</value>
         </entry>
         <entry>
             <key>FILE_TYPE</key>
             <value>text</value>
         </entry>
         <entry>
-            <key>MANUFACTURER</key>
-            <value>0</value>
-        </entry>
-        <entry>
-            <key>TYPE</key>
-            <value>FILE</value>
-        </entry>
-        <entry>
-            <key>COMMENT</key>
+            <key>DISPLAYNAME</key>
+            <value>Firewall_Policy.xml</value>
         </entry>
     </map>
 </metadata>
